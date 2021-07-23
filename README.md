@@ -42,3 +42,9 @@ kubectl delete -f .\primeiro-pod.yaml
 ```
 kubectl exec -it portal-noticias -- bash
 ```
+
+### Formata a saída do comando de maneira wide(ampla)
+```
+kubectl get pods -o wide
+```
+
