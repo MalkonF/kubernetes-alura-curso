@@ -38,6 +38,11 @@ kubectl delete pod nginx-pod
 kubectl delete -f .\primeiro-pod.yaml
 ```
 
+### Deletar todos os svc's
+```
+kubectl delete svc --all
+```
+
 ### Abrir o terminal de determinado container
 ```
 kubectl exec -it portal-noticias -- bash
