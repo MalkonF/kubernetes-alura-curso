@@ -48,3 +48,7 @@ kubectl exec -it portal-noticias -- bash
 kubectl get pods -o wide
 ```
 
+### Exibe todos os svc
+```
+kubectl get svc
+```
