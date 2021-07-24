@@ -48,6 +48,11 @@ kubectl exec -it portal-noticias -- bash
 kubectl get pods -o wide
 ```
 
+### Formata a saída do comando de maneira wide(ampla)
+```
+kubectl get nodes -o wide
+```
+
 ### Exibe todos os svc
 ```
 kubectl get svc
