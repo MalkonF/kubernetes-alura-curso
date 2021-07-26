@@ -32,6 +32,11 @@ kubectl get svc
 kubectl get configmap
 ```
 
+### Exibe informações sobre o replicaset
+```
+kubectl get replicaset
+```
+
 ### Exibe informações sobre os config maps
 ```
 kubectl describe configmap db-configmap
