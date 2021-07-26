@@ -12,6 +12,31 @@ kubectl run nginx-pod --image=nginx:latest
 kubectl get pods --watch
 ```
 
+### Formata a saída do comando de maneira wide(ampla)
+```
+kubectl get pods -o wide
+```
+
+### Formata a saída do comando de maneira wide(ampla)
+```
+kubectl get nodes -o wide
+```
+
+### Exibe todos os svc
+```
+kubectl get svc
+```
+
+### Exibe todos os config maps
+```
+kubectl get configmap
+```
+
+### Exibe informações sobre os config maps
+```
+kubectl describe configmap db-configmap
+```
+
 ### Exibe informações sobre os pods
 
 ```
@@ -46,19 +71,4 @@ kubectl delete svc --all
 ### Abrir o terminal de determinado container
 ```
 kubectl exec -it portal-noticias -- bash
-```
-
-### Formata a saída do comando de maneira wide(ampla)
-```
-kubectl get pods -o wide
-```
-
-### Formata a saída do comando de maneira wide(ampla)
-```
-kubectl get nodes -o wide
-```
-
-### Exibe todos os svc
-```
-kubectl get svc
 ```
