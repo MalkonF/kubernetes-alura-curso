@@ -53,6 +53,11 @@ kubectl edit pod nginx-pod
 kubectl apply -f .\primeiro-pod.yaml
 ```
 
+### Gera config maps de maneira declarativa
+```
+kubectl apply -f .\db-configmap.yaml
+```
+
 ### Deletar os pods
 ```
 kubectl delete pod nginx-pod

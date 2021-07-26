@@ -5,9 +5,7 @@ metadata:
 spec:
   type: ClusterIP
   selector: #define pra qual pod vai ser essa svc
-    app: segundo-pod
-  ports: #qual porta ele vai ouvir. Se só tiver uma port como aqui entao ele 
-         #vai ouvir e despachar para essa porta, no caso aqui a 80
-    - port: 9000
-          #Se vc quiser ouvir e despachar para uma porta diferente, coloque a tag abaixo:
-      targetPort: 80 #aqui é onde ele vai despachar
+    app: db-noticias
+  ports:
+    - port: 3306
+         

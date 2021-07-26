@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sistema-noticias
+  labels:
+    app: sistema-noticias
+spec:
+  containers:
+    - name: sistema-noticias-container
+      image: aluracursos/sistema-noticias:1
+      ports:
+        - containerPort: 80
+      envFrom:
+        - configMapRef: 
+            name: sistema-configmap #diz que vai usar as var de ambiente desse config map
+            #este sistema representa o backend o portal-noticias o frontend da aplicação

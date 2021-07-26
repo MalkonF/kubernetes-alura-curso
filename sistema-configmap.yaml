@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+  name: sistema-configmap
+data:
+  HOST_DB: svc-db-noticias:3306 #para achar o pod que ta rodando o bd tem que localizar pelo svc dele
+  USER_DB: root
+  PASS_DB: q1w2e3r4
+  DATABASE_DB: empresa

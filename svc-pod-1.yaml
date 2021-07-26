@@ -10,4 +10,4 @@ spec:
       #targetPort: 80 #aqui é onde ele vai despachar
       nodePort: 30000 # aqui vc pode definir qual será o ip externo desse svc. Ele pode estar no intervalo de 30000 a 32767
   selector:
-    app: primeiro-pod
+    app: portal-noticias
