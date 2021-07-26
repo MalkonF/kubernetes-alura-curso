@@ -37,6 +37,7 @@ kubectl get configmap
 kubectl get replicaset
 ```
 
+
 ### Exibe informações sobre os config maps
 ```
 kubectl describe configmap db-configmap
@@ -82,3 +83,23 @@ kubectl delete svc --all
 ```
 kubectl exec -it portal-noticias -- bash
 ```
+
+### Mostra o histórico de revisões de um deployment
+```
+kubectl rollout history deployment nginx-deployment
+```
+
+### Mandar gravar as alterações no deployment no histórico de revisões
+```
+kubectl apply -f .\nginx-deployment.yaml --record
+```
+
+### Defini um comentário na revisão
+```
+ kubectl annotate deployment nginx-deployment kubernetes.io/change-cause="Definindo a imagem com versão latest"
+ ```
+
+ ### Volta o estado do deployment para um estado anterior ao atual
+ ```
+ kubectl rollout undo deployment nginx-deployment --to-revision=2
+ ```
